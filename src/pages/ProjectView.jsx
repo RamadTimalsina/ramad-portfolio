@@ -19,9 +19,12 @@ const ProjectView = () => {
   useEffect(() => {
     const getProject = async () => {
       await axios
-        .get(`http://localhost:4000/api/v1/project/get/${id}`, {
-          withCredentials: true,
-        })
+        .get(
+          `https://ramad-portfolio-backend.onrender.com/api/v1/project/get/${id}`,
+          {
+            withCredentials: true,
+          },
+        )
         .then((res) => {
           setTitle(res.data.project.title);
           setDescription(res.data.project.description);
@@ -31,7 +34,8 @@ const ProjectView = () => {
           setGitRepoLink(res.data.project.gitRepoLink);
           setProjectLink(res.data.project.projectLink);
           setProjectBanner(
-            res.data.project.projectBanner && res.data.project.projectBanner.url
+            res.data.project.projectBanner &&
+              res.data.project.projectBanner.url,
           );
         })
         .catch((error) => {
