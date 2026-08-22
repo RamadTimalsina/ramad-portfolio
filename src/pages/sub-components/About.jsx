@@ -6,8 +6,8 @@ const About = () => {
   useEffect(() => {
     const getMyProfile = async () => {
       const { data } = await axios.get(
-        "http://localhost:4000/api/v1/user/portfolio/me",
-        { withCredentials: true }
+        "https://ramad-portfolio-backend.onrender.com/api/v1/user/portfolio/me",
+        { withCredentials: true },
       );
       setUser(data.user);
     };

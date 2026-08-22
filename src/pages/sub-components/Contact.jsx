@@ -15,12 +15,12 @@ const Contact = () => {
     setLoading(true);
     await axios
       .post(
-        "http://localhost:4000/api/v1/message/send",
+        "https://ramad-portfolio-backend.onrender.com/api/v1/message/send",
         { senderName, subject, message },
         {
           withCredentials: true,
           headers: { "Content-Type": "application/json" },
-        }
+        },
       )
       .then((res) => {
         toast.success(res.data.message);
