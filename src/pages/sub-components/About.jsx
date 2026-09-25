@@ -44,15 +44,18 @@ const About = () => {
           </div>
           <div className="flex justify-center flex-col tracking-[1px] text-xl gap-5">
             <p>
-              My name is Ramad I will graduate in Diploma in Information
-              Technology from ..... around ####. I work as a web developer and
-              freelancer. My hobbies include watching movies, series as well as
-              anime, and occasionally cooking.
+              I’m a self-taught software developer from Nepal with a Diploma in
+              Information Technology. I’ve worked on real-world projects through
+              internships and contract roles, building backend systems, APIs,
+              and mobile applications using technologies like Node.js,
+              PostgreSQL, and React Native.
             </p>
             <p>
-              I have interests not only in technology but also in movies,
-              series, video games, and cooking. I excel in meeting deadlines for
-              my work.
+              I care about writing clean, maintainable code and understanding
+              the reasoning behind technical decisions—not just making things
+              work, but making them reliable and scalable. Currently, I’m
+              building in public, improving my skills, and looking for my next
+              opportunity to grow as a developer.
             </p>
           </div>
         </div>
